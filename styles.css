@@ -16,6 +16,7 @@ body {
 
   justify-content: center;
   align-content: center;
+  gap: 20px;
 }
 
 .card {
@@ -39,6 +40,7 @@ h1 {
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   padding: 40px;
+  border-radius: 8px;
 }
 
 .Sedans .button:hover {
@@ -53,6 +55,7 @@ h1 {
   background-color: hsl(184, 100%, 22%);
   grid-area: SUVs;
   padding: 40px;
+  border-radius: 8px;
 }
 
 .SUVs button:hover {
@@ -69,6 +72,7 @@ h1 {
   border-top-right-radius: 8px;
   border-bottom-right-radius: 8px;
   padding: 40px;
+  border-radius: 8px;
 }
 
 .Luxury button:hover {
@@ -83,19 +87,23 @@ h1 {
   color: hsla(0, 0%, 100%, 0.75);
   border: 2px solid hsl(0, 0%, 95%);
   border-radius: 30px;
-  padding: 15px 35px;
-  margin-top: 45px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: 0.5s;
 }
 
 .orange {
   background-color: hsl(31, 77%, 52%);
 }
+
 .green {
   background-color: hsl(184, 100%, 22%);
 }
+
 .dark-green {
   background-color: hsl(179, 100%, 13%);
 }
+
 /* ======================Desktop==================== */
 
 @media (max-width: 800px) {
@@ -114,16 +122,19 @@ h1 {
     color: hsla(0, 0%, 100%, 0.75);
     line-height: 30px;
   }
+
   .Sedans {
     grid-area: Sedans;
     grid-column: 1;
     grid-row: 1 / span 3;
   }
+
   .SUVs {
     grid-area: SUVs;
     grid-column: 2;
     grid-row: 1 / span 3;
   }
+
   .Luxury {
     grid-area: Luxury;
     grid-column: 3;
@@ -140,34 +151,36 @@ h1 {
       "SUVs   SUVs"
       "Luxury  Luxury";
     width: 80%;
+    height: 100%;
     margin: auto;
     justify-content: center;
     align-content: center;
   }
+
   .card {
     padding: 60px;
     color: hsla(0, 0%, 100%, 0.75);
     line-height: 30px;
   }
+
   .Sedans {
     grid-area: Sedans;
     grid-column: 1 / span 3;
     grid-row: 1;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom-left-radius: 0;
+    border-radius: 8px;
   }
+
   .SUVs {
     grid-area: SUVs;
     grid-column: 1 / span 3;
     grid-row: 2;
+    border-radius: 8px;
   }
+
   .Luxury {
     grid-area: Luxury;
     grid-column: 1 / span 3;
     grid-row: 3;
-    border-bottom-right-radius: 8px;
-    border-bottom-left-radius: 8px;
-    border-top-right-radius: 0;
+    border-radius: 8px;
   }
 }
